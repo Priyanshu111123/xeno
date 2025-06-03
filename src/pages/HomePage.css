@@ -1,0 +1,113 @@
+/* src/pages/HomePage.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: white;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00d1b2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #00d1b2;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 180px;
+  background-color: #1a1a1a;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #333;
+}
+
+/* Main Content */
+.home-content {
+  margin-left: 200px;
+  padding: 2rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #00d1b2;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #00b89c;
+}
+
+.home-image {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.about-us h2 {
+  color: #00d1b2;
+}
